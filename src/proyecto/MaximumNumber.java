@@ -15,6 +15,6 @@ public class MaximumNumber {
                 max = input;
             }
         }
-        System.out.println("the largest number is: " + max);
+        System.out.println("The largest number in the seriesis: " + max);
     }
 }

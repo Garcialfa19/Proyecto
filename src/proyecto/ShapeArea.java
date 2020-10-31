@@ -50,6 +50,6 @@ public class ShapeArea {
                 result = 0.0d;
                 break;
         }
-        System.out.println("The area of the shape entered is: " + result);
+        System.out.println("The area of the shape entered  is: " + result);
     }
 }
