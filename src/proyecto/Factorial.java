@@ -5,15 +5,17 @@ import java.util.Scanner;
 public class Factorial {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner uinput = new Scanner(System.in);
         double value;
         double factorial = 1;
+        double input;
         System.out.println("Please enter the number");
-        value = input.nextInt();
+        input = uinput.nextInt();
+        value = input;
         while (value > 1) {
             factorial *= value;
             value--;
         }
-        System.out.println(factorial);
+        System.out.println("The factorial of " + input + " is: " + factorial);
     }
 }
