@@ -33,6 +33,6 @@ public class Average2 {
         System.out.print(num5 + ", ");
         System.out.print(num6 + ", ");
         System.out.println(num7 + ", ");
-        System.out.println("The average of the numbers is: " + avg);
+        System.out.println("The average of the numbers entered is: " + avg);
    }
 }
