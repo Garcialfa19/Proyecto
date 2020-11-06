@@ -24,9 +24,8 @@ public class Power {
         exponent = input.nextInt();
 
         // the result is calculated
-        for (int y = exponent; y != 0; y--) {
-            base *= base;
-            y--;
+        for (int y = exponent; (y-2) >= 0; y--) {
+            base = base * base;
         }
 
         System.out.println("The result is: " + base);
