@@ -8,7 +8,6 @@ public class Power {
 
         int base;
         int exponent;
-        int result;
         Scanner input = new Scanner(System.in);
 
 
