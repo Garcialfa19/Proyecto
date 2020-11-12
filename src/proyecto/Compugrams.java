@@ -1,13 +1,16 @@
 package proyecto;
 
 public class Compugrams {
+
     public static void main(String[] args) {
 
+        int n = 5;
+
         // ---->
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.print("-");
             for (int j = 0; j < 1; j++) {
-                if (i == 3)
+                if (i == (n-1))
                     System.out.print(">");
             }
         }
@@ -22,9 +25,9 @@ public class Compugrams {
 
         for (int p = 0; p < 3; p++) {
 
-            for (int j = 0; j < 4; j++) {
+            for (int j = 0; j < n; j++) {
                 System.out.print("-");
-                if (j == 3)
+                if (j == (n-1))
                     System.out.print(">");
 
             }
@@ -41,20 +44,20 @@ public class Compugrams {
         //*****
 
         // top line
-        for (int s = 0; s < 5; s++) {
+        for (int s = 0; s < n; s++) {
             System.out.print("*");
         }
         System.out.println();
         // middle of shape
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < (n-2); i++) {
             System.out.print("*");
-            for (int j = 0; j < 3; j++) {
+            for (int j = 0; j < (n-2); j++) {
                 System.out.print(" ");
             }
             System.out.println("*");
         }
         // bottom line
-        for (int s = 0; s < 5; s++) {
+        for (int s = 0; s < n; s++) {
             System.out.print("*");
         }
 
@@ -68,9 +71,9 @@ public class Compugrams {
         //*  **
         //*****
 
-        for (int row = 1; row <= 5; row++) {
-            for (int col = 1; col <= 5; col++) {
-                if (row == 1 || row == 5 || col == 1 || col == 5 || col == row) {
+        for (int row = 1; row <= n; row++) {
+            for (int col = 1; col <= n; col++) {
+                if (row == 1 || row == n || col == 1 || col == n || col == row) {
                     System.out.print("*");
                 } else {
                     System.out.print(" ");
@@ -89,7 +92,6 @@ public class Compugrams {
         //**  *
         //*****
 
-        int n =5;
         for (int row = 1; row <= n; row++) {
             for (int col = 1; col <= n; col++) {
                 if (row == 1 || row == n || col == 1 || col == n || col == (n-row+1)) {
